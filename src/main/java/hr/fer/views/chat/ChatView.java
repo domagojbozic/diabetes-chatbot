@@ -32,10 +32,10 @@ public class ChatView extends Div {
     private final Chat chatSession;
     private final ScheduledExecutorService executorService;
 
-    public ChatView(Bot alice, ScheduledExecutorService executorService) {
+    public ChatView(Bot john, ScheduledExecutorService executorService) {
         this.executorService = executorService;
         ui = UI.getCurrent();
-        chatSession = new Chat(alice);
+        chatSession = new Chat(john);
         message.setPlaceholder("Enter a message...");
         message.setSizeFull();
         Button send = new Button(VaadinIcon.ENTER.create(), event -> sendMessage());
@@ -53,7 +53,7 @@ public class ChatView extends Div {
         executorService.schedule(() -> {
                 String answer = chatSession.multisentenceRespond(text);
                 ui.access(() -> messageList.addMessage(
-                    "Alice", new Avataaar("Alice2"), answer, false));
+                    "John", new Avataaar("John"), answer, false));
             },new Random().ints(1000, 3000).findFirst().getAsInt(),
             TimeUnit.MILLISECONDS);
 
