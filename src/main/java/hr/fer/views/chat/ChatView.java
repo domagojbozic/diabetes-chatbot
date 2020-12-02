@@ -50,12 +50,8 @@ public class ChatView extends Div {
         String text = message.getValue();
         messageList.addMessage("You", new Avataaar("Name"), text, true);
         message.clear();
-        executorService.schedule(() -> {
-                String answer = chatSession.multisentenceRespond(text);
-                ui.access(() -> messageList.addMessage(
-                    "John", new Avataaar("John"), answer, false));
-            },new Random().ints(1000, 3000).findFirst().getAsInt(),
-            TimeUnit.MILLISECONDS);
+        String answer = chatSession.multisentenceRespond(text);
+        messageList.addMessage( "John", new Avataaar("John"), answer, false);
 
     }
 
