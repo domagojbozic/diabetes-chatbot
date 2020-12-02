@@ -1,10 +1,124 @@
 <aiml version="1.0.1" encoding="UTF-8">
     <category>
-        <pattern>HELLO</pattern>
-
+        <pattern>^ HELLO ^</pattern>
         <template>
-            Hello User
+            <random>
+                <li>Hello! I'm John.</li>
+                <li>Hi! I'm John.</li>
+                <li>Hello there!</li>
+            </random>
         </template>
+    </category>
 
+    <category>
+        <pattern>^ HI ^</pattern>
+
+        <template><srai>^ hello ^</srai></template>
+    </category>
+
+    <!-- food and drinks -->
+    <category>
+        <pattern>^ ALCOHOL ^</pattern>
+        <template>
+            Alcohol can raise and lower sugar levels depending on amounts and types.
+            Moderate amounts of alcohol may increase levels, especially if they are higher carbohydrate drinks such as beer or sweeter mixed drinks.
+            Too much alcohol can cause low blood sugar.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ SKIPPING LUNCH ^</pattern>
+        <template>
+            Skipping meals can send glucose levels on a bit of a roller coaster ride.
+            The liver can actually release too much glucose into the bloodstream when no food has been eaten.
+            You should rather eat regular smaller meals with lower carb/healthy foods.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ SKIPPING MEALS ^</pattern>
+        <template><srai>^ skipping lunch ^</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ SKIPPING DINNER ^</pattern>
+        <template><srai>^ skipping lunch ^</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ SKIPPING BREAKFAST ^</pattern>
+        <template><srai>^ skipping lunch ^</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ REGULAR MEALS ^</pattern>
+        <template><srai>^ skipping lunch ^</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ JUICING ^</pattern>
+        <template>
+            You may be raising your levels with too much juice, especially if you are using lots of fruit.
+            Even though fruit juice is high in vitamins, it is still sugar to the body and challenges insulin output.
+            You should check your blood sugar levels for a time to see how your current juices are affecting your levels.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ PROTEIN ^</pattern>
+        <template>
+            You should eat around 0.8 - 1.0 gm of protein for each kg of body weight. Body builders and elite athletes may require more.
+            Your main dietary focus should be unrefined foods, lots of veggies, and fish.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ SWEETENER ^</pattern>
+        <template>
+            The sweetener of choice for many is Stevia. It is 200 times sweeter than sucrose and can be used in cooking.
+            In addition to its sweetening property, Stevia has been shown to lower both blood pressure and blood sugar levels in animal studies.
+            Also, it is packaged under more than one name, and is available in both liquid and powder forms.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ STEVIA ^</pattern>
+        <template><srai>^ sweetener ^</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ SUGAR SUBSTITUTE ^</pattern>
+        <template><srai>^ sweetener ^</srai></template>
+    </category>
+
+    <!-- general questions -->
+    <category>
+        <pattern>How to recognize diabetes</pattern>
+        <template>
+            Some of the symptoms of diabetes are frequent and copious urination, dry mouth, excessive thirst,
+            lack of energy, weight loss or gain, slow wound healing or frequent infections, fruit odor.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ SYMPTOMS ^</pattern>
+        <template><srai>How to recognize diabetes</srai></template>
+    </category>
+
+    <category>
+        <pattern>Can stress increase blood sugar levels</pattern>
+        <template>
+            Stress can elevate blood sugar, and if you are already requiring insulin when you are otherwise unstressed,
+            you may need more at these times.
+        </template>
+    </category>
+
+    <category>
+        <pattern>Can being sick increase blood sugar</pattern>
+        <template>
+            Illness can lead to an increase in blood sugar levels. The most important step to take during illness
+            is to make sure that blood sugar levels are stable to prevent a small problem like a cold or the flu
+            from causing greater problems.
+        </template>
     </category>
 </aiml>
