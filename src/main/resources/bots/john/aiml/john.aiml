@@ -3,11 +3,17 @@
         <pattern>^ HELLO ^</pattern>
         <template>
             <random>
-                <li>Hello! I'm John.</li>
-                <li>Hi! I'm John.</li>
-                <li>Hello there!</li>
+                <li>Hello! Ask me some questions.</li>
+                <li>Hi! Ask me some questions.</li>
+                <li>Ask me some questions!</li>
             </random>
         </template>
+    </category>
+
+    <category>
+        <pattern>Give me welcome message</pattern>
+
+        <template>Hello, my name is John and I'm your friendly bot. You can ask me questions about diabetes.</template>
     </category>
 
     <category>

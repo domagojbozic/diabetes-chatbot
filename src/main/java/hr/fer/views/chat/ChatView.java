@@ -22,6 +22,8 @@ import org.vaadin.artur.Avataaar;
 @RouteAlias(value = "", layout = MainView.class)
 public class ChatView extends Div {
 
+    private static final String WELCOME_MESSAGE="Give me welcome message";
+
     private final MessageList messageList = new MessageList();
     private final TextField message = new TextField();
     private final Chat chatSession;
@@ -30,6 +32,7 @@ public class ChatView extends Div {
         chatSession = new Chat(john);
         message.setPlaceholder("Enter a message...");
         message.setSizeFull();
+        getWelcomeMessage();
         Button send = new Button(VaadinIcon.ENTER.create(), event -> sendMessage());
         send.addClickShortcut(Key.ENTER);
         HorizontalLayout inputLayout = new HorizontalLayout(message, send);
@@ -45,6 +48,10 @@ public class ChatView extends Div {
         String answer = chatSession.multisentenceRespond(text);
         messageList.addMessage( "John", new Avataaar("John"), answer, false);
 
+    }
+
+    private void getWelcomeMessage() {
+        messageList.addMessage("John", new Avataaar("John"), chatSession.multisentenceRespond(WELCOME_MESSAGE), false);
     }
 
 
