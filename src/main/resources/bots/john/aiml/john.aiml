@@ -24,6 +24,31 @@
 
     <!-- food and drinks -->
     <category>
+        <pattern>^ DIET ^</pattern>
+        <template>
+            Your diabetes diet is simply a healthy-eating plan that will help you control your blood sugar. Choose healthy carbohydrates, fiber-rich foods, fish and "good" fats.
+            You can take a look at this website for more details https://www.diabetes.org.uk/guide-to-diabetes/enjoy-food/eating-with-diabetes/what-is-a-healthy-balanced-diet .
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ DIET ^ TYPE 1 ^</pattern>
+        <template>
+            Your diabetes diet is simply a healthy-eating plan that will help you control your blood sugar.
+            Drink water, sugar-free and diet soft drinks. Tea and coffee are still OK to include, too.  Your diet should  include making healthier food choices that are lower in saturated fat, sugar and salt.
+            For more information, check this website https://www.diabetes.org.uk/guide-to-diabetes/enjoy-food/eating-with-diabetes/i-have-type-1-diabetes .
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ DIET ^ TYPE 2 ^</pattern>
+        <template>
+            The advice is to make healthier choices more often, and only have treats occasionally and in small portions. Try and make changes to your food choices that are realistic and achievable so you’ll stick with them.
+            If you're unsure about your choices and life style, the best thing would be do see dietitian.
+        </template>
+    </category>
+
+    <category>
         <pattern>^ ALCOHOL ^</pattern>
         <template>
             Alcohol can raise and lower sugar levels depending on amounts and types.
@@ -97,6 +122,108 @@
         <template><srai>^ sweetener ^</srai></template>
     </category>
 
+    <!-- exercise -->
+    <category>
+        <pattern>^ AFTER EXERCISE ^</pattern>
+        <template>
+            Exercise is a stressor, so blood sugar will be higher immediately after your session.
+            Also, blood sugars tend to be higher in the mornings because of hormonal activity during the night.
+            Wait an hour after you exercise to get more realistic results.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ BEST TIME OF DAY ^ EXERCISE ^ </pattern>
+        <template>
+            Since it's very important to have enough fuel in your system to cover your activity, the best way to determine
+            your needs and best exercise time is to test before and after exercising.
+            If you are comfortable soon after your meal, that is a great time as you are well fueled.
+            The best time to exercise is any time that you can fit it in as opposed to skipping it!
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ EXERCISE ^ </pattern>
+        <template>
+            Staying active can help lower your chances of developing other complications, such as high blood pressure, heart disease,
+            nerve damage, and vision loss. Regular exercise may also help improve your overall quality of life.
+            <srai> ^ EXERCISE ^ TYPE 1 ^ </srai>
+            <srai> ^ EXERCISE ^ TYPE 2 ^ </srai>
+            No matter what, it's really important to check your blood sugar levels before and after workouts.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ EXERCISE ^ TYPE 1 ^ </pattern>
+        <template>
+            For diabetes type 1, incorporate short sprints or high-intensity intervals into aerobic workouts to reduce the drop in your blood sugar level.
+            For example, it may help to sprint for 5 seconds every 2 minutes during a 30-minute cycling session. Also, doing resistance activities before an aerobic workout
+            may help keep your blood sugar steadier. For instance, consider lifting weights before you go for a jog or swim laps.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ EXERCISE ^ TYPE 2 ^ </pattern>
+        <template>
+            Some of the best exercises for people with diabetes type 2 are walking, cycling, swimming, aerobic dance, pilates and
+            yoga. If you're not sure about any of these, the best thing to do is consult with a doctor.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ STEROIDS ^ </pattern>
+        <template>
+             You can most likely expect the steroids to cause a rise in your blood sugars and it's better not to take steroids
+             unless advised by your doctor for medical reasons. If you want to use them for muscle building, better option would be
+             microfiltered whey protein powder w/o preservatives, sucralose, or other additives in it and this should be done under
+             nutritional supervision to ensure a good dietary balance.
+        </template>
+    </category>
+
+    <!-- treatment -->
+    <category>
+        <pattern> ^ TREATMENT ^ </pattern>
+        <template>
+            Diabetes is a serious disease that you cannot treat on your own.
+            Your doctor will help you make a diabetes treatment plan that is right for you.
+            If you have type 1 diabetes, you will need insulin in the form of injections or through use of a continuous pump.
+            Drugs for type 2 diabetes work in different ways to bring blood sugar levels back to normal and they are mostly pills.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ STOP ^ MEDICATION ^ </pattern>
+        <template>
+            This kind of questions needs to be discussed with your doctor. While diabetes is incurable, a person can stay in remission for a long time.
+            Currently, it is easier for a person to reverse type 2 diabetes than type 1 because people with type 2 diabetes can make relatively simple lifestyle and
+            dietary adjustments to bring their blood sugar levels back into the normal range.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ REMISSION ^ </pattern>
+        <template>
+            No cure for diabetes currently exists, but the disease can go into remission. When diabetes goes into remission, it means that the body does not
+            show any signs of diabetes, although the disease is technically still present.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ INSULIN ^ DIDN'T NEED ^ </pattern>
+        <template>
+            If a person doesn't need insulin, and is injected with it, there's a strong possibility of getting a very low blood sugar reaction,
+            depending on the insulin dosage and the amount of food eaten.
+        </template>
+    </category>
+
+    <category>
+        <pattern> ^ MISDIAGNOSED ^ </pattern>
+        <template>
+            Chances of being misdiagnosed with diabetes are very low to none because a diagnosis of diabetes is clear via lab tests,
+            and usually, blood sugars are high even with oral medications and lifestyle changes.
+        </template>
+    </category>
+
     <!-- general questions -->
     <category>
         <pattern>How to recognize diabetes</pattern>
@@ -126,5 +253,243 @@
             is to make sure that blood sugar levels are stable to prevent a small problem like a cold or the flu
             from causing greater problems.
         </template>
+    </category>
+
+    <category>
+        <pattern>^ STRESS ^</pattern>
+        <template><srai>Can stress increase blood sugar levels</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ SICKNESS ^</pattern>
+        <template><srai>Can being sick increase blood sugar</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ ILLNESS ^</pattern>
+        <template><srai>Can being sick increase blood sugar</srai></template>
+    </category>
+
+    <category>
+        <pattern>How do I find out whether I am type 1 or type 2 diabetes</pattern>
+        <template>
+            There are tests that can determine levels of natural insulin production. If you are truly type 1,
+            you require insulin in order to live, usually via daily injections. With type 2, some people take
+            insulin to help get glucose levels under control, but by adopting a more healthy lifestyle with
+            diet/exercise, levels can begin to come under better control and insulin/medication may not required.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ TYPES ^</pattern>
+        <template><srai>How do I find out whether I am type 1 or type 2 diabetes</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ TYPE ^</pattern>
+        <template><srai>How do I find out whether I am type 1 or type 2 diabetes</srai></template>
+    </category>
+
+    <category>
+         <pattern>Does drinking black coffee impact a fasting test</pattern>
+         <template>
+              Caffeine is a central nervous system stimulator, and may have a short term effect on blood sugars.
+              Only water should be consumed prior to testing.
+         </template>
+    </category>
+
+    <category>
+         <pattern>^ TEST ^</pattern>
+         <template><srai>Does drinking black coffee impact a fasting test</srai></template>
+    </category>
+
+    <category>
+         <pattern>^ BLACK COFFEE IMPACT ^</pattern>
+         <template><srai>Does drinking black coffee impact a fasting test</srai></template>
+    </category>
+
+    <category>
+         <pattern>^ CAFFEINE ^</pattern>
+         <template><srai>Does drinking black coffee impact a fasting test</srai></template>
+    </category>
+
+    <category>
+         <pattern>Is it possible to stop being diabetic</pattern>
+         <template>
+              Once you have diabetes, you will always have it, but you can manage it to the
+              point that it appears as if you don't have it. What this means is that you can get your blood sugars
+              under control and within normal ranges, and maintain the healthy lifestyle required to
+              stay within range.
+         </template>
+    </category>
+
+    <category>
+        <pattern>^ STOP ^</pattern>
+        <template><srai>Is it possible to stop being diabetic</srai></template>
+    </category>
+
+    <category>
+         <pattern>Can I drink water during the two hour period before testing my blood sugar</pattern>
+         <template>
+              Of course! Water is a major nutrient, as we are composed of at least 60% water.
+              It is calorie free, so it will not raise your blood sugar.
+         </template>
+    </category>
+
+    <category>
+        <pattern>^WATER^BEFORE TESTING ^</pattern>
+        <template><srai>Can I drink water during the two hour period before testing my blood sugar</srai></template>
+    </category>
+
+    <category>
+         <pattern>What is Brittle Diabetes</pattern>
+         <template>
+              Brittle is a term used when one has had diabetes for a long time,
+              and in spite of a solid focus on maintaining a healthy lifestyle and good medication
+              management, it becomes harder to control blood sugars.
+         </template>
+    </category>
+
+    <category>
+        <pattern>^ BRITTLE ^</pattern>
+        <template><srai>What is Brittle Diabetes</srai></template>
+    </category>
+
+    <category>
+         <pattern>Can very low blood sugars cause depression and cause someone to act like a different person</pattern>
+         <template>
+              Erratic blood sugars can cause mood swings, such as one
+              would expect with untreated bipolar disorder.
+         </template>
+    </category>
+
+    <category>
+        <pattern>^ LOW BLOOD SUGAR ^DEPRESSION^</pattern>
+        <template><srai>Can very low blood sugars cause depression and cause someone to act like a different person</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ DEPRESSION ^</pattern>
+        <template><srai>Can very low blood sugars cause depression and cause someone to act like a different person</srai></template>
+    </category>
+
+    <category>
+         <pattern>How does smoking affect diabetes</pattern>
+         <template>
+              Diabetes is considered a cardiovascular disease and smoking negatively affects
+              the cardiovascular system. This can definitely interfere with metabolism and good
+              blood sugar control.
+         </template>
+    </category>
+
+    <category>
+        <pattern>^ SMOKING ^</pattern>
+        <template><srai>How does smoking affect diabetes</srai></template>
+    </category>
+
+    <!-- COMPLICATIONS -->
+    <category>
+        <pattern>How do I make sure to get rid of ketones in my system after an illness</pattern>
+        <template>
+            Drink at least 8 ounces of water every 30-60 mins, do not exercise, and test for ketones
+            every 3-4 hours to monitor.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ KETONES ^</pattern>
+        <template><srai>How do I make sure to get rid of ketones in my system after an illness</srai></template>
+    </category>
+
+    <category>
+        <pattern>Does diabetic neuropathy always impact both legs and feet or can it effect only one limb</pattern>
+        <template>
+            Since neuropathy is a slowly evolving condition, you may notice it in one
+            area for a time before nerve damage occurs in other areas.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ NEUROPATHY ^</pattern>
+        <template><srai>Does diabetic neuropathy always impact both legs and feet
+        or can it effect only one limb</srai></template>
+    </category>
+
+    <category>
+        <pattern>Is my severe overall itchiness related to high blood sugar</pattern>
+        <template>
+            Poor blood flow could cause itching in lower limbs and dry skin. Yeast infections might also
+            be a cause.  Fluctuating sugars over time can cause nerve root damage.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ ITCH ^</pattern>
+        <template><srai>Is my severe overall itchiness related to high blood sugar</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ POOR BLOOD FLOW ^</pattern>
+        <template><srai>Is my severe overall itchiness related to high blood sugar</srai></template>
+    </category>
+
+    <category>
+        <pattern>Am I more prone to infections if I have diabetes</pattern>
+        <template>
+            When diabetes is not well managed, your general resistance can be lower, making you more
+            susceptible to infections, illnesses, and a longer recovery time.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ INFECTIONS ^</pattern>
+        <template><srai>Am I more prone to infections if I have diabetes</srai></template>
+    </category>
+
+    <category>
+        <pattern>How do I maintain my blood sugar when I cannot eat due to illness</pattern>
+        <template>
+            During the times when you can't eat, you can replace a meal by substituting about
+            60 grams of carbohydrates in the form of juice, ice cream, or Jell-O. For a snack,
+            you will need approximately 15 grams of carbohydrate.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ CANNOT EAT ^</pattern>
+        <template><srai>How do I maintain my blood sugar when I cannot eat due to illness</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ MAINTAIN ^</pattern>
+        <template><srai>How do I maintain my blood sugar when I cannot eat due to illness</srai></template>
+    </category>
+
+    <category>
+        <pattern>Can diabetes affect my bladder control</pattern>
+        <template>
+            Yes, this could be a possible symptom of neuropathy. If this is the case, it means your
+            diabetes has been progressing for a long time, probably several years before you
+            were even diagnosed.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ BLADDER ^</pattern>
+        <template><srai>Can diabetes affect my bladder control</srai></template>
+    </category>
+
+    <category>
+        <pattern>How can diabetes affect the kidneys</pattern>
+        <template>
+            Diabetes can affect the action and health of the kidneys if not managed well over a
+            longer term. Kidneys have a microvascular network where filtration occurs and nutrients
+            are reabsorbed.
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ KIDNEYS ^</pattern>
+        <template><srai>How can diabetes affect the kidneys</srai></template>
     </category>
 </aiml>
